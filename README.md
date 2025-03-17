@@ -49,16 +49,6 @@ DevSync is a full-stack MERN (MongoDB, Express, React, Node.js) web application 
 | `POST` | `/api/auth/login` | User login using Firebase. |
 | `POST` | `/api/auth/register` | User registration using Firebase. |
 
----
-
-## 📸 **Screenshots**  
-
-- **Homepage**  
-- **Code Debugger**  
-- **Resume Generator**  
-- **Journal**  
-- **Study Path**  
-- **Quiz**  
 
 ---
 
