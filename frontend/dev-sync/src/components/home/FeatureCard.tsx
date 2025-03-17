@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { LucideIcon } from "lucide-react";
-//hi this is just an experiment 
+
 interface FeatureCardProps {
   icon: LucideIcon;
   title: string;
