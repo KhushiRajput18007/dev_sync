@@ -59,6 +59,54 @@ export default function Index() {
             </div>
           </div>
         </section>
+  
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Users Say</h2>
+              <p className="text-lg text-muted-foreground">
+                Join thousands of developers who have transformed their skills with our platform.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[1, 2, 3].map((i) => (
+                <div key={i} className="glass-card p-6 rounded-xl">
+                  <div className="flex space-x-1 mb-4">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <svg
+                        key={star}
+                        className="w-5 h-5 text-amber-500"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="mb-4 text-foreground">
+                    {i === 1 && "The AI code debugger saved me hours of troubleshooting. It's like having a senior developer by your side at all times."}
+                    {i === 2 && "I've landed two job interviews thanks to the resume generator. The AI suggestions helped me highlight skills I didn't know were valuable."}
+                    {i === 3 && "The learning path generator created a perfect roadmap for me to transition from frontend to full-stack development."}
+                  </p>
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                      <span className="text-primary font-medium">{i === 1 ? "JD" : i === 2 ? "SL" : "AP"}</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold">
+                        {i === 1 ? "John Doe" : i === 2 ? "Sarah Lee" : "Alex Park"}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {i === 1 ? "Frontend Developer" : i === 2 ? "Software Engineer" : "Full-Stack Developer"}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
         
       
         
