@@ -44,12 +44,29 @@ export default function Hero() {
             With AI Innovation
           </h1>
           
-         
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+            Revolutionize your development journey with our suite of AI-powered tools. 
+            Debug code, create personalized learning paths, generate resumes, and test 
+            your skills in one integrated platform.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in" style={{ animationDelay: "0.7s" }}>
+            <Button size="lg" asChild>
+              <Link to="/signup" className="group">
+                Get Started 
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link to="/features">Explore Features</Link>
+            </Button>
+          </div>
         </div>
       </div>
 
-     
-    
+
+      <div className="absolute top-1/4 left-10 w-72 h-72 bg-primary/5 rounded-full filter blur-3xl opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}></div>
+      <div className="absolute bottom-1/4 right-10 w-60 h-60 bg-primary/5 rounded-full filter blur-3xl opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}></div>
     </section>
   );
 }
