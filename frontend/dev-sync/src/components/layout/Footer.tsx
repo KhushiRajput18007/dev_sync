@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Github, Twitter, Linkedin } from "lucide-react";
 
@@ -41,7 +42,28 @@ export default function Footer() {
           
           <div>
             <h3 className="font-medium mb-4">Features</h3>
-            
+            <ul className="space-y-2">
+              <li>
+                <Link to="/debugger" className="text-muted-foreground hover:text-primary transition-colors">
+                  Code Debugger
+                </Link>
+              </li>
+              <li>
+                <Link to="/learning" className="text-muted-foreground hover:text-primary transition-colors">
+                  Learning Path
+                </Link>
+              </li>
+              <li>
+                <Link to="/resume" className="text-muted-foreground hover:text-primary transition-colors">
+                  Resume Generator
+                </Link>
+              </li>
+              <li>
+                <Link to="/quiz" className="text-muted-foreground hover:text-primary transition-colors">
+                  Quiz Section
+                </Link>
+              </li>
+            </ul>
           </div>
           
           <div>
